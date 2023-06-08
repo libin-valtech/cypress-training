@@ -1,0 +1,79 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/test/node_modules
+/app/node_modules
+
+# IDEs and editors
+/.idea
+/.idea/shelf
+/.idea/inspectionProfiles
+/.idea/codeStyles
+/.idea/libraries
+/.idea/client.iml
+/.idea/encodings.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/sonarlint/issuestore
+/.idea/runConfigurations.xml
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+/reports
+
+# e2e
+/e2e/*.map
+/e2e/reports/results.json
+/e2e/reports/report/*
+/e2e/reports/json-output-folder/*
+
+# Cypress
+cypress/results/*
+cypress/reports/*
+cypress/screenshots/*
+cypress/videos/*
+cypress/downloads/*
+/cucumber-messages.ndjson
+cypress/downloads/*
+
+# System Files
+.DS_Store
+Thumbs.db
+/.gtm/
+
+# Config file
+/src/assets/config/config.json
+
+# Icon moon font genrated files
+/src/assets/fonts/HE-icons/demo.html
+/src/assets/fonts/HE-icons/style.css
+
+# angular cache files
+/.cache
+/.angular
+/.scannerwork
