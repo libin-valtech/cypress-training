@@ -17,6 +17,8 @@ const AddToCartBtn = ({ disabled, id, qty }) => {
 
   return (
     <Button
+      data-cy="addToCart"
+      data-cy-value={id}
       className='btn-block btn-brand'
       type='button'
       disabled={disabled}
