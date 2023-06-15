@@ -79,10 +79,10 @@ const CartScreen = ({ match, location, history }) => {
             </>
           ) : (
             <>
-              <ListGroup variant='flush'>
+              <ListGroup data-cy="cartItems" variant='flush'>
                 {cartItems.map((item) => (
                   <ListGroup.Item key={item.product}>
-                    <Row>
+                    <Row data-cy="cartEntry" data-cy-value={item.product}>
                       <Col md={2} className='my-auto'>
                         <Link to={`/product/${item.product}`}>
                           <Image
