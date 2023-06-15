@@ -6,7 +6,7 @@ import AddToCartBtn from './AddToCartBtn'
 
 const Product = ({ product }) => {
   return (
-    <Card className='my-3 p-3 rounded card-main card-main-sm card-main-md'>
+    <Card data-cy="product" data-cy-value={product._id} className='my-3 p-3 rounded card-main card-main-sm card-main-md'>
       <Link to={`/product/${product._id}`}>
         <Card.Img src={product.image} vatiant='top' alt={product.name} />
       </Link>
