@@ -1,17 +1,38 @@
-describe('Cypress website tour', () => {
+describe('Login', () => {
 
-  it('visit cypress website', () => {
-    cy.visit('https://example.cypress.io');
-    cy.contains("type").click();
+  it('login to app', () => {
+    cy.visit(Cypress.config().baseUrl);
+    cy.url().should('include', cy.config().baseUrl);
+    cy.get('nav a[href="/login"]').click();
+    cy.get('#email').type('jane@example.com');
+    cy.get('#password').type('123456');
+    cy.get('form button.btn-primary').click();
+    cy.get('#username').should('be.visible');
+  });
 
-    cy.url().should('include', '/commands/actions');
-
-    cy.wait(2000);
-    cy.get('.action-email').type('hello world');
-
-  })
-  
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,20 @@
+{
+    "products": [
+        {
+            "id": "648073603099700fa49a8b57",
+            "name": "play station",
+            "quantity": 5
+        },
+        {
+            "id": "648073603099700fa49a8b58",
+            "name": "iphone",
+            "quantity": 4
+        },
+        {
+            "id": "648073603099700fa49a8b5a",
+            "name": "chair",
+            "quantity": 2
+        }
+    ]
+}
+

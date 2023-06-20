@@ -117,7 +117,7 @@ const LoginScreen = ({ location, history }) => {
               onChange={(e) => setPassword(e.target.value)}
             ></Form.Control>
           </Form.Group>
-          <Button className='btn-brand' type='submit'>
+          <Button className='btn-brand' data-cy="loginButton" type='submit'>
             Login
           </Button>
         </Form>
