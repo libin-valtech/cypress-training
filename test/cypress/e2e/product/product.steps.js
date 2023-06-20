@@ -2,6 +2,12 @@ import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import { productHelpers } from "./product.helper";
 import { navigationHelpers } from "../navigation/navigation.helpers";
   
+
+beforeEach(() => {
+    cy.reload();
+})
+
+
 Given('I open shop', () => {
     cy.visit(Cypress.config().baseUrl);
     cy.url().should('include', cy.config().baseUrl);
@@ -44,4 +50,8 @@ When('I add prodcts from file {string}', (fileName) => {
             navigationHelpers.goToHome();
         })
     })
+})
+
+Given('I change the quantity to {string}', (quantity) => {
+    productHelpers.changeQuantity(quantity);
 })
