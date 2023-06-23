@@ -9,7 +9,6 @@ export let productHelpers = {
         cy.get(productSelectors.affToCartButton).click();
     },
     changeQuantity: function(quantity) {
-        cy.wait(5000);
         cy.get(productSelectors.quantityField, {timeout: 15000}).select(quantity);
     }
 }

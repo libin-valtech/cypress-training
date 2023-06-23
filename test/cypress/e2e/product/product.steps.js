@@ -3,9 +3,9 @@ import { productHelpers } from "./product.helper";
 import { navigationHelpers } from "../navigation/navigation.helpers";
   
 
-beforeEach(() => {
-    cy.reload();
-})
+// beforeEach(() => {
+//     cy.reload();
+// })
 
 
 Given('I open shop', () => {
@@ -14,10 +14,7 @@ Given('I open shop', () => {
 })
 
 When('I login', () => {
-    cy.get('nav a[href="/login"]').click();
-    cy.get('#email').type('jane@example.com');
-    cy.get('#password').type('123456');
-    cy.get('form button.btn-primary').click();
+    cy.login('jane@example.com', '123456');
 })
 
 Then('I verify the login is successful', () => {

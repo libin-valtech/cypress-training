@@ -8,6 +8,7 @@ import Spinner from '../components/layout/Spinner'
 import Message from '../components/Message'
 import Paginate from '../components/Paginate'
 import ProductCarousel from '../components/ProductCarousel'
+import logo from '../images/logo.png'
 
 const HomeScreen = ({ match, history }) => {
   const keyword = match.params.keyword
@@ -42,6 +43,7 @@ const HomeScreen = ({ match, history }) => {
               <h1 className='mr-5' style={{ color: '#53dbb2' }}>
               The hot products
               </h1>
+              <a href={logo} download="logoimage" data-cy="fileDownload">Download</a>
               <ProductCarousel />
             </ListGroup.Item>
           </ListGroup>
